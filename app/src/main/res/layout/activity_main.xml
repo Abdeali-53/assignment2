@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".CheckoutActivity1">
+
+    <TableRow>
+        <TextView
+            android:text=" Customer Name : "
+            android:width ="120dp"
+            />
+        <EditText
+            android:id="@+id/txtCustomerName"
+            android:width="200dp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text=" Address : "
+            android:layout_width="120dp"
+            />
+
+        <EditText
+            android:id="@+id/txtAddr"
+            android:width="200dp"
+            android:inputType="textPostalAddress" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text=" Postal Code : "
+            android:layout_width="120dp"
+            />
+
+        <EditText
+            android:id="@+id/txtPostalCode"
+            android:width="200dp"
+            android:inputType="textPostalAddress" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text=" Mobile No. : "
+            android:layout_width="120dp"
+            />
+
+        <EditText
+            android:id="@+id/txtMoileNumber"
+            android:width="200dp"
+            android:inputType="phone" />
+    </TableRow>
+    <TableRow tools:ignore="ExtraText">
+        <TextView
+            android:text=" Card Type : "
+            android:layout_width="120dp"
+            />
+
+        <Spinner
+            android:id="@+id/txtCardType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/array_cType"
+            android:spinnerMode="dropdown" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text=" Credit Card Number : "
+            android:layout_width="120dp"
+            />
+
+        <EditText
+            android:id="@+id/txtCCNum"
+            android:width="200dp"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=" Expiry Date : "
+            android:layout_width="120dp"
+            />
+        <EditText
+            android:id="@+id/txtExpiryDate"
+            android:width="200dp"
+            />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:id="@+id/buttonOrder"
+            android:text="Order"
+            android:textAlignment="center" />
+    </TableRow>
+
+</TableLayout>
